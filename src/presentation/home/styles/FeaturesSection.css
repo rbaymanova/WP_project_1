@@ -1,15 +1,54 @@
 .features {
-    padding: 50px 10%;
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to right, #d9a7c7, #fffcdc);
+    overflow: hidden;
   }
   
   .features h2 {
     font-size: 28px;
+    color: #8e44ad;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
   }
   
   .features-grid {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+    white-space: normal;
+    
+  }
+  
+  .feature-card {
+    flex: 0 0 320px;
+    max-width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+  }
+  
+  .feature-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8e44ad;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   }
   

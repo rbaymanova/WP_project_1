@@ -1,0 +1,48 @@
+.ready-container {
+    width: 1024px;
+    height: 400px;
+    background-color: #1d1d1d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .explore-button {
+    background-color: #9b6ef3;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .explore-button:hover {
+    background-color: #7f52d4;
+  }
+  .ready-container {
+    width: 1024px;
+    height: 400px;
+    background-color: #1d1d1d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    text-align: center;
+    
+    /* Centering horizontally */
+    margin: 50px auto; /* Auto horizontally centers it */
+  }
+  

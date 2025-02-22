@@ -4,7 +4,9 @@ import "../styles/HeroSection.css";
 const HeroSection = () => (
   <section className="hero">
     <div className="hero-text">
-      <h1>Learn the technology of future</h1>
+      <h1>
+        Learn the <br /> technology <br /> of future
+      </h1>
       <button className="cta-btn">Get Started</button>
     </div>
     <div className="hero-image">
