@@ -1,0 +1,31 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+  }
+  
+  .hero-text {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .cta-btn {
+    background: #8e44ad;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    background: #732d91;
+  }
+  
+  .hero-image img {
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  

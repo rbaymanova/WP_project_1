@@ -1,14 +1,16 @@
 import React from "react";
+import "../styles/HeroSection.css";
 
-const HeroSection = () => {
-  return (
-    <section className="text-center bg-gradient-to-b from-purple-300 to-purple-500 py-20 text-black">
-      <h1 className="text-5xl font-bold">Learn the technology of future</h1>
-      <button className="mt-6 bg-purple-600 text-white px-6 py-3 rounded-full">
-        Get Started
-      </button>
-    </section>
-  );
-};
+const HeroSection = () => (
+  <section className="hero">
+    <div className="hero-text">
+      <h1>Learn the technology of future</h1>
+      <button className="cta-btn">Get Started</button>
+    </div>
+    <div className="hero-image">
+      <img src="/hero_image.png" alt="Future technology" />
+    </div>
+  </section>
+);
 
 export default HeroSection;
