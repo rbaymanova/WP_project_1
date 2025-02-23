@@ -1,0 +1,41 @@
+.team-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: scale(1.02);
+}
+
+.team-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: gray;
+}
+
+.team-description {
+    font-size: 0.9rem;
+    color: #333;
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; 
 import "../styles/Navbar.css";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
-  const handleLogin = () => {
-    navigate("/profile");
+  const handleLoginClick = () => {
+    navigate("/profile"); 
   };
 
   return (
@@ -15,13 +15,13 @@ const Navbar = () => {
         <img src="/logo_pro.svg" alt="Logo" />
       </div>
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Courses</li>
-        <li>Our team</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/courses">Courses</Link></li>
+        <li><Link to="/team">Our Team</Link></li>
       </ul>
       <div className="nav-actions">
         <img src="/lang.svg" alt="Language" />
-        <button className="login-btn" onClick={handleLogin}>Login</button>
+        <button className="login-btn" onClick={handleLoginClick}>Login</button>
       </div>
     </nav>
   );

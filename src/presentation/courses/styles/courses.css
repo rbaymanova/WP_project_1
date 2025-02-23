@@ -1,8 +1,47 @@
+/* Full-page layout */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Content area expands and becomes scrollable if needed */
+.content {
+    flex-grow: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Courses grid layout */
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    width: 100%;
+    max-width: 1200px;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+    border-radius: 10px;
+}
+
+/* Centered heading */
+.courses-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Footer should be at the bottom and scrollable */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    width: 100%;
 }
