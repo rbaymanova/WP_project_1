@@ -9,6 +9,8 @@ import AnimatedBackground from "./presentation/home/widgets/AnimationBackgound";
 import ReadyToStart from "./presentation/home/widgets/ReadyToStart";
 import Footer from "./presentation/home/widgets/Footer";
 import ProfilePage from "./presentation/profile/widgets/profile_page"; 
+import ForgotPassword from "./presentation/forgot_password/widgets/forgot_password";
+import Verification from "./presentation/verification/widgets/verification";
 import "./App.css";
 
 
