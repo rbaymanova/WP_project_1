@@ -1,5 +1,6 @@
 import React from "react";
-import "./styles/CourseCard.css";
+ import "../styles/course_card.css"; // Fix the path
+
 
 const CourseCard = ({ title, description, image }) => {
     return (
@@ -13,3 +14,4 @@ const CourseCard = ({ title, description, image }) => {
       </div>
     );
   };
+export default CourseCard;
