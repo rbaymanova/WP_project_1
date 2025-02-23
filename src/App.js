@@ -1,29 +1,42 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./presentation/home/widgets/Navbar";
 import FeaturesSection from "./presentation/home/widgets/FeaturesSection";
 import HeroSection from "./presentation/home/widgets/HeroSection";
 import AboutPlatform from "./presentation/home/widgets/AboutPlatform";
 import AnimatedBackground from "./presentation/home/widgets/AnimationBackgound";
-import "./App.css";
+
 import ReadyToStart from "./presentation/home/widgets/ReadyToStart";
 import Footer from "./presentation/home/widgets/Footer";
-
+import ProfilePage from "./presentation/profile/widgets/profile_page"; 
+import "./App.css";
 
 
 
 const App = () => {
   return (
-    <AnimatedBackground>
-      <div className="scroll-container">
-        <Navbar />
-        <HeroSection />
-        <FeaturesSection />
-        <AboutPlatform />
-        <ReadyToStart />
-        <Footer />
-      </div>
-    </AnimatedBackground>
+    <Router>
+      <AnimatedBackground>
+        <div className="scroll-container">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+          </Routes>
+        </div>
+      </AnimatedBackground>
+    </Router>
   );
 };
+
+const HomePage = () => (
+  <>
+    <HeroSection />
+    <FeaturesSection />
+    <AboutPlatform />
+    <ReadyToStart />
+    <Footer />
+  </>
+);
 
 export default App;

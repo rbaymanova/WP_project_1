@@ -1,0 +1,102 @@
+/* Profile Page Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #e0f7fa, #fff7e6);
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* Profile Picture */
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-button {
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+  }
+  
+  .change-button {
+    background: #263238;
+    color: white;
+  }
+  
+  .delete-button {
+    background: #b388ff;
+    color: white;
+  }
+  
+  .custom-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Form Inputs */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    width: 48%;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  /* Save Button */
+  .save-button {
+    background: #9575cd;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .save-button:hover {
+    background: #7e57c2;
+  }
+  
