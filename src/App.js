@@ -10,6 +10,9 @@ import ReadyToStart from "./presentation/home/widgets/ReadyToStart";
 import Footer from "./presentation/home/widgets/Footer";
 import ProfilePage from "./presentation/profile/widgets/profile_page"; 
 import "./App.css";
+import CoursePage from "./presentation/courses/widgets/courses";
+import Team from "./presentation/mentors/widgets/Team";
+
 
 
 
@@ -22,7 +25,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/courses" element={<CoursePage />} />
+            <Route path="/team" element={<Team />} />
           </Routes>
+          <Footer />
         </div>
       </AnimatedBackground>
     </Router>

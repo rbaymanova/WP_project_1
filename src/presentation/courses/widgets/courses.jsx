@@ -18,10 +18,11 @@ const CoursePage = () => {
               <CourseCard title="QA Testing" description="Ensure software quality through testing." image="/frontend.png" />
             </div>
           </div>
+          <Footer /> 
         </div>
-        <Footer /> {/* Footer outside to always stay at the bottom */}
       </AnimatedBackground>
     );
 };
 
 export default CoursePage;
+
