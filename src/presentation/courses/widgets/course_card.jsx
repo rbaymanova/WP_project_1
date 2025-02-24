@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/CourseCard.css";
 
+
 const CourseCard = ({ title, description, image }) => {
     return (
       <div className="course-card">
@@ -13,3 +14,4 @@ const CourseCard = ({ title, description, image }) => {
       </div>
     );
   };
+  export default CourseCard;

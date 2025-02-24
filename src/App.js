@@ -5,12 +5,11 @@ import FeaturesSection from "./presentation/home/widgets/FeaturesSection";
 import HeroSection from "./presentation/home/widgets/HeroSection";
 import AboutPlatform from "./presentation/home/widgets/AboutPlatform";
 import AnimatedBackground from "./presentation/home/widgets/AnimationBackgound";
-
 import ReadyToStart from "./presentation/home/widgets/ReadyToStart";
 import Footer from "./presentation/home/widgets/Footer";
 import ProfilePage from "./presentation/profile/widgets/profile_page"; 
+import MyCourses from "./presentation/my_course/widgets/my_course";
 import "./App.css";
-
 
 
 const App = () => {
@@ -22,6 +21,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/my-courses" element={<MyCourses />} /> {/* My Courses Page */}
           </Routes>
         </div>
       </AnimatedBackground>

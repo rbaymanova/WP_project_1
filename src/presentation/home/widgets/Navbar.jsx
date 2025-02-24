@@ -9,14 +9,15 @@ const Navbar = () => {
     navigate("/profile");
   };
 
+
   return (
     <nav className="navbar">
       <div className="logo">
         <img src="/logo_pro.svg" alt="Logo" />
       </div>
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Courses</li>
+        <li onClick={() => navigate("/")}>Home</li>
+        <li > Courses</li>
         <li>Our team</li>
       </ul>
       <div className="nav-actions">
