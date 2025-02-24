@@ -31,6 +31,14 @@ const CourseCard = () => {
         </div>
 
         <div className="section-footer">Part 2: JavaScript</div>
+        <div className="lesson-list">
+          <LessonItem title="Web Basics & Frontend" progress={0} unlocked />
+          <LessonItem title="HTML Essentials" progress={0} unlocked />
+          <LessonItem title="CSS Fundamentals" progress={0} unlocked />
+          <LessonItem title="Layouts (Flexbox & Grid)" progress={0} />
+          <LessonItem title="Responsive Design" progress={0} />
+          <LessonItem title="CSS Best Practices" progress={0} />
+        </div>
       </div>
     </div>
   );

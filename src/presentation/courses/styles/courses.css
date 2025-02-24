@@ -1,47 +1,59 @@
-/* Full-page layout */
-.page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Content area expands and becomes scrollable if needed */
-.content {
-    flex-grow: 1;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.courses-container {
+  text-align: center;
+  padding: 20px;
 }
 
-/* Courses grid layout */
+.courses-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
 .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
-    border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-/* Centered heading */
-.courses-heading {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
+.course-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
 }
 
-/* Footer should be at the bottom and scrollable */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: auto;
-    width: 100%;
+.course-card img {
+  width: 100%;
+  height: auto;
+}
+
+.course-card h2 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.course-card p {
+  font-size: 1em;
+  margin: 10px;
+}
+
+.course-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.course-card button:hover {
+  background-color: #444;
 }

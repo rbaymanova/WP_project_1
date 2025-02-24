@@ -2,6 +2,7 @@ import React from "react";
 
 import "../styles/Team.css";
 import TeamCard from "./team_card";
+import Footer from "../../home/widgets/Footer";
 
 const teamMembers = [
   {
@@ -44,6 +45,9 @@ const Team = () => {
         {teamMembers.map((member, index) => (
           <TeamCard key={index} {...member} />
         ))}
+      </div>
+      <div className="team-footer">
+     
       </div>
     </div>
   );

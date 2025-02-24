@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom"; 
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate(); 
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handleLoginClick = () => {
-    navigate("/profile"); 
+  useEffect(() => {
+    const userToken = localStorage.getItem("userToken");
+    setIsAuthenticated(!!userToken);
+  }, []);
+
+  const handleAuthClick = () => {
+    if (isAuthenticated) {
+      navigate("/profile"); 
+    } else {
+      navigate("/login"); 
+    }
   };
 
   return (
@@ -21,7 +31,13 @@ const Navbar = () => {
       </ul>
       <div className="nav-actions">
         <img src="/lang.svg" alt="Language" />
-        <button className="login-btn" onClick={handleLoginClick}>Login</button>
+        <button className="login-btn" onClick={handleAuthClick}>
+          {isAuthenticated ? (
+            <img src="/profile_icon.svg" alt="Profile" className="profile-icon" />
+          ) : (
+            "Login"
+          )}
+        </button>
       </div>
     </nav>
   );

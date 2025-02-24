@@ -24,7 +24,7 @@ const ProfilePage = () => {
   className="profile-picture"
   onError={(e) => e.target.src = "/default-profile.jpg"} // Fallback to default
 />
-
+  
   return (
     <>
   
