@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/team.css";
+import "../styles/Team.css";
 import TeamCard from "./team_card";
 
 const teamMembers = [
