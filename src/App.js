@@ -14,6 +14,7 @@ import Verification from "./presentation/verification/widgets/verification";
 import "./App.css";
 import CoursePage from "./presentation/courses/widgets/courses";
 import Team from "./presentation/mentors/widgets/Team";
+import CourseDetail from "./presentation/course_detail/widgets/course_detail";
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/courses" element={<CoursePage />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/course_detail" element={<CourseDetail />} />
           </Routes>
           <Footer />
         </div>
