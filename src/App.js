@@ -8,8 +8,14 @@ import AnimatedBackground from "./presentation/home/widgets/AnimationBackgound";
 import ReadyToStart from "./presentation/home/widgets/ReadyToStart";
 import Footer from "./presentation/home/widgets/Footer";
 import ProfilePage from "./presentation/profile/widgets/profile_page"; 
-import MyCourses from "./presentation/my_course/widgets/my_course";
+import ForgotPassword from "./presentation/forgot_password/widgets/forgot_password";
+import Verification from "./presentation/verification/widgets/verification";
 import "./App.css";
+import CoursePage from "./presentation/courses/widgets/courses";
+import Team from "./presentation/mentors/widgets/Team";
+import CourseDetail from "./presentation/course_detail/widgets/course_detail";
+
+
 
 
 const App = () => {
@@ -21,8 +27,11 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/profile" element={<ProfilePage />} />
-            <Route path="/my-courses" element={<MyCourses />} /> {/* My Courses Page */}
+            <Route path="/courses" element={<CoursePage />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/course_detail" element={<CourseDetail />} />
           </Routes>
+    
         </div>
       </AnimatedBackground>
     </Router>

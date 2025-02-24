@@ -1,12 +1,22 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom"; 
 import "../styles/Navbar.css";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  const handleLogin = () => {
-    navigate("/profile");
+  useEffect(() => {
+    const userToken = localStorage.getItem("userToken");
+    setIsAuthenticated(!!userToken);
+  }, []);
+
+  const handleAuthClick = () => {
+    if (isAuthenticated) {
+      navigate("/profile"); 
+    } else {
+      navigate("/login"); 
+    }
   };
 
 
@@ -16,13 +26,19 @@ const Navbar = () => {
         <img src="/logo_pro.svg" alt="Logo" />
       </div>
       <ul className="nav-links">
-        <li onClick={() => navigate("/")}>Home</li>
-        <li > Courses</li>
-        <li>Our team</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/courses">Courses</Link></li>
+        <li><Link to="/team">Our Team</Link></li>
       </ul>
       <div className="nav-actions">
         <img src="/lang.svg" alt="Language" />
-        <button className="login-btn" onClick={handleLogin}>Login</button>
+        <button className="login-btn" onClick={handleAuthClick}>
+          {isAuthenticated ? (
+            <img src="/profile_icon.svg" alt="Profile" className="profile-icon" />
+          ) : (
+            "Login"
+          )}
+        </button>
       </div>
     </nav>
   );

@@ -1,5 +1,4 @@
-
-.login-page {
+.signin-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +29,7 @@
     margin-bottom: 20px;
   }
   
-  .login-input-container {
+  .signin-input-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -38,7 +37,7 @@
     max-width: 350px;
   }
   
-  .login-input {
+  .signin-input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -46,7 +45,7 @@
     font-size: 16px;
   }
   
-  .login-button {
+  .signin-button {
     width: 100%;
     max-width: 350px;
     background: #a065e6;
@@ -60,26 +59,26 @@
     cursor: pointer;
   }
   
-  .login-button:hover {
+  .signin-button:hover {
     background: #8b4ed9;
   }
   
-  .signup-text {
+  .login-text {
     margin-top: 15px;
     font-size: 14px;
     text-align: center;
   }
   
-  .signup-link {
+  .login-link {
     color: #3b82f6;
     cursor: pointer;
   }
   
-  .signup-link:hover {
+  .login-link:hover {
     text-decoration: underline;
   }
   
-.forgot-password-text {
+  .forgot-password-text {
     margin-top: 10px;
     font-size: 14px;
     text-align: center;
