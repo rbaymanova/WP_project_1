@@ -4,11 +4,15 @@ import "../styles/Navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate(); 
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem("userToken"));
 
   useEffect(() => {
-    const userToken = localStorage.getItem("userToken");
-    setIsAuthenticated(!!userToken);
+    const handleStorageChange = () => {
+      setIsAuthenticated(!!localStorage.getItem("userToken"));
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
 
   const handleAuthClick = () => {

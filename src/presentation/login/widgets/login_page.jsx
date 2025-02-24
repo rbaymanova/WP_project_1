@@ -1,18 +1,25 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom"; 
 import Navbar from '../../home/widgets/Navbar';
 import Footer from '../../home/widgets/Footer';
 import '../styles/login.css';
 
 const Login = () => {
+  const navigate = useNavigate(); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
+    if (email && password) { 
+      localStorage.setItem("userToken", "true"); 
+      navigate("/profile"); 
+    } else {
+      alert("Please enter email and password"); 
+    }
   };
 
   return (
     <div>
-      <Navbar />
       <div className="login-page">
         <div className="logo-container">
           <img src="/logo_pro.svg" alt="Logo" className="logo" />
@@ -37,7 +44,7 @@ const Login = () => {
         </div>
         <button className="login-button" onClick={handleLogin}>Login</button>
         <p className="signup-text">
-          Don’t have an account? <span className="signup-link">Sign Up</span>
+          Don’t have an account? <span className="signup-link" onClick={() => navigate("/register")}>Sign Up</span>
         </p>
         <p className="forgot-password-text">
           <span className="forgot-password-link">Forgot your password?</span>
