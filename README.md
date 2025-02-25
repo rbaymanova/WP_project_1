@@ -64,20 +64,7 @@ Learnify is a mockup web-based learning platform designed for our web programmin
     
 
 **3\. Features & Functionality**
---------------------------------
-
-### **Available Courses:**
-
-*   Frontend Development
-    
-*   Project Management
-    
-*   UI/UX Design
-    
-*   Content Creation
-    
-*   QA Testing
-    
+--------------------------------    
 
 ### **UI Components:**
 
@@ -103,9 +90,6 @@ Learnify is a mockup web-based learning platform designed for our web programmin
 5.  The user can navigate between different sections using the navigation bar.
     
 
-### **Screenshots:**
-
-\[Include images of the UI here\]
 
 **4\. Development Process**
 ---------------------------
