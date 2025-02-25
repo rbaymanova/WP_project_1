@@ -17,6 +17,10 @@ import CourseDetail from "./presentation/course_detail/widgets/course_detail";
 import Login from "./presentation/login/widgets/login_page";
 import SignUp from "./presentation/register/widgets/signup";
 import MyCourse from "./presentation/my_course/widgets/my_course";
+import PrivacyPolicy from "./presentation/home/widgets/PrivacyPolicy";
+import TermsOfService from "./presentation/home/widgets/TermsOfService";
+import CookiePolicy from "./presentation/home/widgets/CookiePolicy";
+
 
 
 
@@ -38,6 +42,9 @@ const App = () => {
             <Route path="/my_course" element = {<MyCourse />} />
             <Route path="/forgot_password" element = {<ForgotPassword />} />
             <Route path="/verification" element = {<Verification />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
           </Routes>
     
         </div>

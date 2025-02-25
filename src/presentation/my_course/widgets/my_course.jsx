@@ -1,7 +1,6 @@
 import React from "react";
 import "../../my_course/styles/my_course.css";
 import Footer from "../../home/widgets/Footer";
-import { useNavigate } from "react-router-dom"; 
 
 
 const courses = [
@@ -23,7 +22,6 @@ const courses = [
 ];
 
 const MyCourse = () => {
-  const navigate = useNavigate(); 
   return (
     <div className="my-course-page">
 
@@ -44,7 +42,7 @@ const MyCourse = () => {
                     ></div>
                   </div>
                   <p className="progress-text">{course.progress}%</p>
-                  <button className="view-course-btn" onClick={() => navigate("/course_detail")}>View Course</button>
+                  <button className="view-course-btn" >View Course</button>
                 </div>
               </div>
             ))}
