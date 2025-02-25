@@ -51,7 +51,7 @@ Learnify is a mockup web-based learning platform designed for our web programmin
 ### **Installation Steps:**
 
 1.  Clone the repository: 
-``` git clone \[repository\_link\]```
+``` git clone https://github.com/rbaymanova/WP_project_1```
     
 2.  Navigate to the project folder:
 ``` cd learnify```
