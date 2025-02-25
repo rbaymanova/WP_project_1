@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom"; 
-import Footer from '../../home/widgets/Footer';
-import '../styles/login.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Footer from "../../home/widgets/Footer";
+import "../styles/login.css";
 
 const Login = () => {
-  const navigate = useNavigate(); 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    if (email && password) { 
-      localStorage.setItem("userToken", "true"); 
-      navigate("/profile"); 
+    if (email && password) {
+      localStorage.setItem("userToken", "true");
+      navigate("/profile", { replace: true });
     } else {
-      alert("Please enter email and password"); 
+      alert("Please enter email and password");
     }
   };
 
@@ -41,12 +41,20 @@ const Login = () => {
             className="login-input"
           />
         </div>
-        <button className="login-button" onClick={handleLogin}>Login</button>
+        <button className="login-button" onClick={handleLogin}>
+          Login
+        </button>
         <p className="signup-text">
-          Don’t have an account? <span className="signup-link" onClick={() => navigate("/register")}>Sign Up</span>
+          Don’t have an account?{" "}
+          <span className="signup-link" onClick={() => navigate("/register")}>
+            Sign Up
+          </span>
         </p>
         <p className="forgot-password-text">
-          <span className="forgot-password-link" onClick={() => navigate("/forgot_password")} >
+          <span
+            className="forgot-password-link"
+            onClick={() => navigate("/forgot_password")}
+          >
             Forgot your password?
           </span>
         </p>
