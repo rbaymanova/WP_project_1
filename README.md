@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+**Learnify Project Documentation**
+==================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**1\. Project Overview**
+------------------------
 
-## Available Scripts
+### **Project Name:**
 
-In the project directory, you can run:
+Learnify
 
-### `npm start`
+### **Description:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Learnify is a mockup web-based learning platform designed for our web programming course project. It showcases our frontend development skills by simulating a learning platform that offers short courses in IT-related fields. The focus of this project is solely on frontend development, with no backend functionality implemented.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Technologies Used:**
 
-### `npm test`
+*   HTML
+    
+*   CSS
+    
+*   JavaScript
+    
+*   React.js
+    
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **Team Members and Roles:**
 
-### `npm run build`
+*   **Project Manager**: Ruxshona Baymanova - Responsible for documentation and team coordination.
+    
+*   **Frontend Developer**: Lobar Ashurova - Implementing the UI components.
+    
+*   **UI/UX Designer**: Xurliman Gobenova - Designing the interface and user experience.
+    
+*   **Content Creator**: Gulira’no Tojimurodova - Adding and managing text content, images, and assisting with design.
+    
+*   **QA Tester**: Akmal Jumaboyev - Testing the platform for usability, bugs, and improvements.
+    
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**2\. Project Setup & Installation**
+------------------------------------
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Prerequisites:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*   Node.js installed on your system
+    
+*   Code editor (VS Code recommended)
+    
+*   Git for version control
+    
 
-### `npm run eject`
+### **Installation Steps:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.  Clone the repository: ``` git clone \[repository\_link\]```
+    
+2.  Navigate to the project folder:``` cd learnify```
+    
+3.  Install dependencies:``` npm install```
+    
+4.  Start the development server:``` npm start```
+    
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**3\. Features & Functionality**
+--------------------------------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Available Courses:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*   Frontend Development
+    
+*   Project Management
+    
+*   UI/UX Design
+    
+*   Content Creation
+    
+*   QA Testing
+    
 
-## Learn More
+### **UI Components:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+*   Course Cards: Displays course title, description, and a "Join Now" button.
+    
+*   Navigation Bar: Provides links to different sections of the website.
+    
+*   Responsive Layout: Ensures usability on different devices.
+    
+*   User can login and access their enrolled courses
+    
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **User Flow:**
 
-### Code Splitting
+1.  The user visits the Learnify homepage.
+    
+2.  They browse the available courses displayed as cards.
+    
+3.  Clicking on a course card provides more details.
+    
+4.  The "Join Now" button simulates enrollment (no actual backend functionality).
+    
+5.  The user can navigate between different sections using the navigation bar.
+    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Screenshots:**
 
-### Analyzing the Bundle Size
+\[Include images of the UI here\]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**4\. Development Process**
+---------------------------
 
-### Making a Progressive Web App
+### **Timeline & Milestones:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+*   **Week 1 & 2:** Focused on brainstorming ideas, designing the UI, and planning the project structure.
+    
+*   **Week 3:** Development phase, where the frontend was implemented, including:
+    
+    *   Building the homepage and navigation bar.
+        
+    *   Developing course cards and ensuring responsiveness.
+        
+    *   Refining the UI, testing, and making final improvements.
+        
 
-### Advanced Configuration
+### **Version Control:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*   Repository hosted on GitHub.
+    
+*   Branching strategy: main for all commits
+    
+*   Regular commits were encouraged, but most of the development was consolidated in the final phase.
