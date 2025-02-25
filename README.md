@@ -50,13 +50,17 @@ Learnify is a mockup web-based learning platform designed for our web programmin
 
 ### **Installation Steps:**
 
-1.  Clone the repository: ``` git clone \[repository\_link\]```
+1.  Clone the repository: 
+``` git clone \[repository\_link\]```
     
-2.  Navigate to the project folder:``` cd learnify```
+2.  Navigate to the project folder:
+``` cd learnify```
     
-3.  Install dependencies:``` npm install```
+3.  Install dependencies:
+``` npm install```
     
-4.  Start the development server:``` npm start```
+4.  Start the development server:
+``` npm start```
     
 
 **3\. Features & Functionality**
