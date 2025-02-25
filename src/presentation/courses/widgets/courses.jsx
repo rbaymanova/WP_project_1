@@ -1,10 +1,8 @@
 import React from "react";
 import "../styles/courses.css";
-import AnimatedBackground from "../../home/widgets/AnimationBackgound";
 import Footer from "../../home/widgets/Footer";
-import { Link, useNavigate } from "react-router-dom"; 
-
-
+import Navbar from "../../home/widgets/Navbar";
+import { useNavigate } from "react-router-dom"; 
 
 const courses = [
   {
@@ -34,16 +32,14 @@ const courses = [
   },
 ];
 
-
 const CoursePage = () => {
-
   const navigate = useNavigate(); 
 
-  const handleLoginClick = () => {
-    navigate("/course_detail"); 
-  };
+
   return (
-      <div className="courses-container">
+    <div className="course-page">
+      <Navbar /> 
+      <div className="course-content">
         <h1>Our Courses</h1>
         <div className="courses-grid">
           {courses.map((course, index) => (
@@ -51,15 +47,16 @@ const CoursePage = () => {
               <img src={course.image} alt={course.title} />
               <h2>{course.title}</h2>
               <p>{course.description}</p>
-              <button className="course-card button" onClick={() => handleLoginClick()}>
-          Get Started
-        </button>
+              <button className="course-button" onClick={navigate("/course_detail")}>
+                Get Started
+              </button>
             </div>
           ))}
         </div>
       </div>
+      <Footer />
+    </div>
   );
 };
 
-export default CoursePage
-
+export default CoursePage;

@@ -2,6 +2,8 @@ import React from "react";
 
 import "../styles/Team.css";
 import TeamCard from "./team_card";
+import Navbar from "../../home/widgets/Navbar";
+import Footer from "../../home/widgets/Footer";
 
 const teamMembers = [
   {
@@ -35,10 +37,10 @@ const teamMembers = [
     image: "/akmal.JPG"
   }
 ];
-
 const Team = () => {
   return (
     <div className="team-page">
+      <Navbar />
       <h2>Our Team</h2>
       <div className="team-container">
         {teamMembers.map((member, index) => (
@@ -46,10 +48,11 @@ const Team = () => {
         ))}
       </div>
       <div className="team-footer">
-     
+        <Footer />
       </div>
     </div>
   );
 };
+
 
 export default Team;

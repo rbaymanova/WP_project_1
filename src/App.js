@@ -24,9 +24,9 @@ import MyCourse from "./presentation/my_course/widgets/my_course";
 const App = () => {
   return (
     <Router>
-      <AnimatedBackground>
+  
         <div className="scroll-container">
-          <Navbar />
+      
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/profile" element={<ProfilePage />} />
@@ -41,13 +41,14 @@ const App = () => {
           </Routes>
     
         </div>
-      </AnimatedBackground>
+  
     </Router>
   );
 };
 
 const HomePage = () => (
   <>
+     <Navbar />
     <HeroSection />
     <FeaturesSection />
     <AboutPlatform />
