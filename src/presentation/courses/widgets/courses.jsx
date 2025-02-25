@@ -33,27 +33,29 @@ const courses = [
 ];
 
 const CoursePage = () => {
-  const navigate = useNavigate(); 
-
-
+  const navigate = useNavigate();
   return (
     <div className="course-page">
       <Navbar /> 
+      <h1>Our Courses</h1>
       <div className="course-content">
-        <h1>Our Courses</h1>
+  
         <div className="courses-grid">
           {courses.map((course, index) => (
             <div className="course-card" key={index}>
               <img src={course.image} alt={course.title} />
               <h2>{course.title}</h2>
               <p>{course.description}</p>
-              <button className="course-button" onClick={navigate("/course_detail")}>
+              <button className="course-button" >
                 Get Started
               </button>
             </div>
           ))}
         </div>
       </div>
+      <button className="course-button" onClick={() => navigate("/course_detail")}>
+          To Course
+        </button>
       <Footer />
     </div>
   );

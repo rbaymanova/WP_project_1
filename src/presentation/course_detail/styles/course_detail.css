@@ -1,0 +1,109 @@
+/* General styles */
+.course-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f8f9fa, #e3e7f1);
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .course-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Course content layout */
+  .course-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  /* Course card */
+  .course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+  }
+  
+  .course-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .course-info p {
+    color: #666;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .enroll-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .enroll-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Course progress section */
+  .course-progress {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  
+  .course-progress h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Lesson list */
+  .course-progress ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-progress li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .lesson-icon {
+    margin-right: 8px;
+    color: #444;
+  }
+  
+  /* Progress percentage */
+  .progress {
+    background: #d6b3ff;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+  
