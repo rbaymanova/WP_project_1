@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import navigate function
-import Navbar from "../../home/widgets/Navbar";
+import { useNavigate } from "react-router-dom"; 
 import Footer from "../../home/widgets/Footer";
 import "../../profile/style/profile_page.css";
 
 const ProfilePage = () => {
-  const navigate = useNavigate(); // Navigation hook
+  const navigate = useNavigate(); 
   const defaultProfilePic = "/default-profile.jpg"; 
 
   const [profilePic, setProfilePic] = useState(defaultProfilePic);
@@ -60,9 +59,6 @@ const ProfilePage = () => {
             <input type="password" placeholder="Confirm Password" />
             <button className="save-button">Save</button>
           </form>
-          <button className="logout-button" onClick={handleLogout}>
-            Logout
-          </button>
         </div>
       </div>
       <Footer />

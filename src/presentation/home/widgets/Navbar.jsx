@@ -23,6 +23,11 @@ const Navbar = () => {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("userToken");
+    setIsAuthenticated(false);
+    navigate("/");
+  };
 
   return (
     <nav className="navbar">
@@ -36,13 +41,22 @@ const Navbar = () => {
       </ul>
       <div className="nav-actions">
         <img src="/lang.svg" alt="Language" />
-        <button className="login-btn" onClick={handleAuthClick}>
-          {isAuthenticated ? (
-            <img src="/profile_icon.svg" alt="Profile" className="profile-icon" />
-          ) : (
-            "Login"
+        <div className="dropdown">
+          <button className="login-btn" onClick={handleAuthClick}>
+            {isAuthenticated ? (
+              <img src="/profile_icon.svg" alt="Profile" className="profile-icon" />
+            ) : (
+              "Login"
+            )}
+          </button>
+          {isAuthenticated && (
+            <div className="dropdown-content">
+              <Link to="/profile">My Profile</Link>
+              <Link to="/my_course">My Courses</Link>
+              <a href="/" onClick={handleLogout}>Logout</a>
+            </div>
           )}
-        </button>
+        </div>
       </div>
     </nav>
   );

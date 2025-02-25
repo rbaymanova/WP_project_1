@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom"; 
-import Navbar from '../../home/widgets/Navbar';
 import Footer from '../../home/widgets/Footer';
 import '../styles/login.css';
 
@@ -47,7 +46,9 @@ const Login = () => {
           Don’t have an account? <span className="signup-link" onClick={() => navigate("/register")}>Sign Up</span>
         </p>
         <p className="forgot-password-text">
-          <span className="forgot-password-link">Forgot your password?</span>
+          <span className="forgot-password-link" onClick={() => navigate("/forgot_password")} >
+            Forgot your password?
+          </span>
         </p>
       </div>
       <Footer />

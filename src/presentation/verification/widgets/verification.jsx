@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Navbar from "../../home/widgets/Navbar";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../home/widgets/Footer";
 import "../styles/verification.css";
 
 const Verification = () => {
   const [otp, setOtp] = useState(["", "", "", "", "", ""]);
+  const navigate = useNavigate();
 
   const handleOtpChange = (index, value) => {
     if (value.length <= 1) {
@@ -16,7 +17,6 @@ const Verification = () => {
 
   return (
     <div>
-        <Navbar/>
         <div className="verification-page">
         <div className="logo-container">
             <img src="/logo_pro.svg" alt="Logo" className="logo" />
@@ -39,8 +39,7 @@ const Verification = () => {
             ))}
         </div>
 
-        <button className="verification-button">Verify</button>
-
+        <button className="verification-button" onClick={() => navigate("/profile")}>Verify</button>
         <p className="resend-text">
             Didn’t get the code? <span className="resend-link">Resend</span>
         </p>

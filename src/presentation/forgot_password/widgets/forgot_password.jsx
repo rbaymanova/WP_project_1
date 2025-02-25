@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar from "../../home/widgets/Navbar";
 import Footer from "../../home/widgets/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/forgot_password.css"; 
 
 const ForgotPassword = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <Navbar />
     
       <div className="forgot-password-container">
         <div className="logo-container">
@@ -22,7 +22,9 @@ const ForgotPassword = () => {
         <div className="input-container">
           <input type="email" placeholder="Email" className="input-field" />
         </div>
-        <button className="send-button">Send reset link</button>
+        <button className="send-button" onClick={() => navigate("/verification")}>
+          Send reset link
+        </button>
         <p className="back-to-login">
           <Link to="/login" className="back-link">Back to login</Link>
         </p>

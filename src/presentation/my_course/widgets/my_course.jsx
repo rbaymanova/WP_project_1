@@ -1,6 +1,5 @@
 import React from "react";
 import "../../my_course/styles/my_course.css";
-import Navbar from "../../home/widgets/Navbar";
 import Footer from "../../home/widgets/Footer";
 
 const courses = [
