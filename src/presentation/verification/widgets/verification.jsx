@@ -17,35 +17,37 @@ const Verification = () => {
 
   return (
     <div>
-        <div className="verification-page">
+      <div className="verification-page">
         <div className="logo-container">
-            <img src="/logo_pro.svg" alt="Logo" className="logo" />
+          <img src="/logo_pro.svg" alt="Logo" className="logo" />
         </div>
         <h2 className="title">Enter Verification Code</h2>
         <p className="subtitle">
-            We've sent a 6-digit code to your email. Enter it below to verify.
+          We've sent a 6-digit code to your email. Enter it below to verify.
         </p>
 
         <div className="verification-input-container">
-            {otp.map((digit, index) => (
+          {otp.map((digit, index) => (
             <input
-                key={index}
-                type="text"
-                maxLength={1}
-                value={digit}
-                onChange={(e) => handleOtpChange(index, e.target.value)}
-                className="otp-input"
+              key={index}
+              type="text"
+              maxLength={1}
+              value={digit}
+              onChange={(e) => handleOtpChange(index, e.target.value)}
+              className="otp-input"
             />
-            ))}
+          ))}
         </div>
 
-        <button className="verification-button" onClick={() => navigate("/profile")}>Verify</button>
+        <button className="verification-button" onClick={() => navigate("/")}>
+          Verify
+        </button>
         <p className="resend-text">
-            Didn’t get the code? <span className="resend-link">Resend</span>
+          Didn’t get the code? <span className="resend-link">Resend</span>
         </p>
-        </div>
+      </div>
 
-        <Footer /> 
+      <Footer />
     </div>
   );
 };
