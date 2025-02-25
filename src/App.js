@@ -14,6 +14,8 @@ import "./App.css";
 import CoursePage from "./presentation/courses/widgets/courses";
 import Team from "./presentation/mentors/widgets/Team";
 import CourseDetail from "./presentation/course_detail/widgets/course_detail";
+import Login from "./presentation/login/widgets/login_page";
+import SignUp from "./presentation/register/widgets/signup";
 
 
 
@@ -30,6 +32,8 @@ const App = () => {
             <Route path="/courses" element={<CoursePage />} />
             <Route path="/team" element={<Team />} />
             <Route path="/course_detail" element={<CourseDetail />} />
+            <Route path="/login" element = {<Login />} />
+            <Route path="/register" element = {<SignUp />} /> 
           </Routes>
     
         </div>

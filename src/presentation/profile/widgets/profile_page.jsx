@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import navigate function
 import Navbar from "../../home/widgets/Navbar";
 import Footer from "../../home/widgets/Footer";
 import "../../profile/style/profile_page.css";
 
 const ProfilePage = () => {
+  const navigate = useNavigate(); // Navigation hook
   const defaultProfilePic = "/default-profile.jpg"; 
 
   const [profilePic, setProfilePic] = useState(defaultProfilePic);
@@ -15,23 +17,30 @@ const ProfilePage = () => {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("userToken");
+    window.dispatchEvent(new Event("storage")); 
+    navigate("/login"); 
+  };
+  
+
   const handleDeletePicture = () => {
     setProfilePic(defaultProfilePic);
   };
-<img 
-  src={profilePic} 
-  alt="Profile" 
-  className="profile-picture"
-  onError={(e) => e.target.src = "/default-profile.jpg"} // Fallback to default
-/>
-  
+
+
+
   return (
     <>
-  
       <div className="profile-container">
         <div className="profile-card">
           <h2>My Profile</h2>
-          <img src={profilePic} alt="Profile" className="profile-picture" />
+          <img 
+            src={profilePic} 
+            alt="Profile" 
+            className="profile-picture"
+            onError={(e) => e.target.src = "/default-profile.jpg"} 
+          />
           <div className="button-group">
             <label className="custom-button change-button">
               Change picture
@@ -51,6 +60,9 @@ const ProfilePage = () => {
             <input type="password" placeholder="Confirm Password" />
             <button className="save-button">Save</button>
           </form>
+          <button className="logout-button" onClick={handleLogout}>
+            Logout
+          </button>
         </div>
       </div>
       <Footer />

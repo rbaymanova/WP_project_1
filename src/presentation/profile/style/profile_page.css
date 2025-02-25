@@ -1,4 +1,4 @@
-/* Profile Page Container */
+
 .profile-container {
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     background: linear-gradient(to bottom right, #e0f7fa, #fff7e6);
   }
   
-  /* Profile Card */
+
   .profile-card {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px;
@@ -17,7 +17,7 @@
     text-align: center;
   }
   
-  /* Profile Picture */
+
   .profile-picture {
     width: 100px;
     height: 100px;
@@ -27,7 +27,7 @@
     margin-bottom: 15px;
   }
   
-  /* Buttons */
+
   .button-group {
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
     opacity: 0.8;
   }
   
-  /* Form Inputs */
+
   form {
     display: flex;
     flex-direction: column;
@@ -84,7 +84,7 @@
     outline: none;
   }
   
-  /* Save Button */
+
   .save-button {
     background: #9575cd;
     color: white;
@@ -100,3 +100,19 @@
     background: #7e57c2;
   }
   
+  .logout-button {
+    background: #ff6b6b;  /* Soft red */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.logout-button:hover {
+    background: #e63946; /* Darker red on hover */
+}
