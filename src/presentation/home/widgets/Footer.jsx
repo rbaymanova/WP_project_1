@@ -1,6 +1,9 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
+
+
 
 const Footer = () => {
   return (
@@ -28,17 +31,17 @@ const Footer = () => {
           <div className="footer-links">
             <a href="#" role="button" onClick={(e) => e.preventDefault()}>About Us</a>
             <a href="#" role="button" onClick={(e) => e.preventDefault()}>Community</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
           </div>
           <div className="footer-links">
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Courses</a>
+            <Link to="/courses">Courses</Link>
             <a href="#" role="button" onClick={(e) => e.preventDefault()}>Contact Us</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Terms of Service</a>
+            <Link to="/terms-of-service">Terms of Service</Link>
           </div>
           <div className="footer-links">
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Our Team</a>
+            <Link to="/team">Our Team</Link>
             <a href="#" role="button" onClick={(e) => e.preventDefault()}>FAQ</a>
-            <a href="#" role="button" onClick={(e) => e.preventDefault()}>Cookie Policy</a>
+            <Link to="/cookie-policy">Cookie Policy</Link>
           </div>
         </div>
 
