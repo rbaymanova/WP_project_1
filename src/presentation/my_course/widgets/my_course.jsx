@@ -1,6 +1,8 @@
 import React from "react";
 import "../../my_course/styles/my_course.css";
 import Footer from "../../home/widgets/Footer";
+import { useNavigate } from "react-router-dom"; 
+
 
 const courses = [
   {
@@ -21,6 +23,7 @@ const courses = [
 ];
 
 const MyCourse = () => {
+  const navigate = useNavigate(); 
   return (
     <div className="my-course-page">
 
@@ -30,7 +33,7 @@ const MyCourse = () => {
           <div className="courses-grid">
             {courses.map((course, index) => (
               <div key={index} className="course-card">
-                <div className="course-image"></div> {/* Pink Background */}
+                <div className="course-image"></div> 
                 <div className="course-info">
                   <h3>{course.title}</h3>
                   <p>Mentor: {course.mentor}</p>
@@ -41,7 +44,7 @@ const MyCourse = () => {
                     ></div>
                   </div>
                   <p className="progress-text">{course.progress}%</p>
-                  <button className="view-course-btn">View Course</button>
+                  <button className="view-course-btn" onClick={() => navigate("/course_detail")}>View Course</button>
                 </div>
               </div>
             ))}
